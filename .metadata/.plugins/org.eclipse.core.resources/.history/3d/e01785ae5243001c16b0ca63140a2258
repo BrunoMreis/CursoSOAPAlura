@@ -1,0 +1,18 @@
+package com.estudo.bruno.soap.estoque.ws;
+
+import java.util.List;
+
+import com.estudo.bruno.soap.estoque.model.Item;
+
+import jakarta.jws.WebService;
+
+@WebService
+public class EstoqueWS {
+	
+	private ItemDAO dao = new ItemDAO;
+	
+	public List<Item> getItens() {
+		System.out.println("Chamando todos Itens");
+	}
+
+}

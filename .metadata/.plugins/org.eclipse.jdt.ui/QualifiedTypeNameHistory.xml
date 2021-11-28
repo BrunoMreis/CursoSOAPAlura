@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.jws.WebResult"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="jakarta.xml.bind.annotation.XmlRootElement"/>
+    <fullyQualifiedTypeName name="jakarta.xml.bind.annotation.XmlAccessorType"/>
+    <fullyQualifiedTypeName name="jakarta.xml.bind.annotation.XmlAccessType"/>
+    <fullyQualifiedTypeName name="jakarta.jws.WebParam"/>
+    <fullyQualifiedTypeName name="br.com.caelum.estoque.modelo.usuario.TokenUsuario"/>
+    <fullyQualifiedTypeName name="br.com.caelum.estoque.modelo.usuario.TokenDao"/>
+    <fullyQualifiedTypeName name="br.com.caelum.estoque.modelo.item.ItemValidador"/>
+    <fullyQualifiedTypeName name="sun.font.TrueTypeFont"/>
+    <fullyQualifiedTypeName name="com.sun.xml.txw2.annotation.XmlElement"/>
+    <fullyQualifiedTypeName name="jakarta.xml.bind.annotation.XmlElement"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlElement"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="br.com.caelum.estoque.modelo.service.DataAdapter"/>
+    <fullyQualifiedTypeName name="jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter"/>
+    <fullyQualifiedTypeName name="com.sun.xml.ws.transport.httpspi.servlet.DeploymentDescriptorParser.AdapterFactory"/>
+    <fullyQualifiedTypeName name="jakarta.xml.bind.annotation.adapters.XmlAdapter"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.annotation.adapters.XmlAdapter"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlRootElement"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlAccessorType"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlAccessType"/>
+    <fullyQualifiedTypeName name="br.com.caelum.estoque.modelo.item.Item"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.Marshaller"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.JAXBException"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.JAXBContext"/>
+    <fullyQualifiedTypeName name="jakarta.xml.bind.JAXBContextFactory"/>
+    <fullyQualifiedTypeName name="com.sun.xml.ws.developer.JAXBContextFactory"/>
+    <fullyQualifiedTypeName name="com.oracle.webservices.api.EnvelopeStyle.Style"/>
+    <fullyQualifiedTypeName name="jakarta.jws.soap.SOAPBinding.Style"/>
+    <fullyQualifiedTypeName name="br.com.caelum.estoque.ws.EstoqueWS"/>
+    <fullyQualifiedTypeName name="javax.jws.WebService"/>
+    <fullyQualifiedTypeName name="br.com.caelum.estoque.ws.AutorizacaoFault"/>
+</qualifiedTypeNameHistroy>

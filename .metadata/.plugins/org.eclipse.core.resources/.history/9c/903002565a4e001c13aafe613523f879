@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//src/main/java/br/com/caelum/estoque/ws/EstoqueWS.java=UTF-8
+encoding//src/main/java/br/com/caelum/estoque/ws/EstoqueWSPortBindingStub.java=UTF-8
+encoding//src/main/java/br/com/caelum/estoque/ws/Filtro.java=UTF-8
+encoding//src/main/java/br/com/caelum/estoque/ws/Item.java=UTF-8
+encoding//src/main/java/br/com/caelum/estoque/ws/TipoItem.java=UTF-8
+encoding//src/main/java/br/com/caelum/estoque/ws/holders/ItemHolder.java=UTF-8

@@ -1,0 +1,89 @@
+<definitions
+	xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+	xmlns:wsp="http://www.w3.org/ns/ws-policy"
+	xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy"
+	xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://ws.estoque.soap.bruno.estudo.com/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://schemas.xmlsoap.org/wsdl/"
+	targetNamespace="http://ws.estoque.soap.bruno.estudo.com/"
+	name="EstoqueWSService">
+	<types>
+		<xsd:schema>
+			<xsd:import
+				namespace="http://ws.estoque.soap.bruno.estudo.com/"
+				schemaLocation="http://localhost:8080/estoquews?xsd=1" />
+		</xsd:schema>
+	</types>
+	<message name="todosOsItens">
+		<part name="parameters" element="tns:todosOsItens" />
+	</message>
+	<message name="todosOsItensResponse">
+		<part name="parameters" element="tns:itens" />
+	</message>
+	<message name="cadastrarItem">
+		<part name="parameters" element="tns:cadastrarItem" />
+		<part name="tokenUsuario" element="tns:tokenUsuario" />
+	</message>
+	<message name="cadastrarItemResponse">
+		<part name="result" element="tns:cadastrarItemResponse" />
+	</message>
+	<message name="AutorizacaoException">
+		<part name="fault" element="tns:AutorizacaoException" />
+	</message>
+	<portType name="EstoqueWS">
+		<operation name="todosOsItens">
+			<input
+				wsam:Action="http://ws.estoque.soap.bruno.estudo.com/EstoqueWS/todosOsItensRequest"
+				message="tns:todosOsItens" />
+			<output
+				wsam:Action="http://ws.estoque.soap.bruno.estudo.com/EstoqueWS/todosOsItensResponse"
+				message="tns:todosOsItensResponse" />
+		</operation>
+		<operation name="cadastrarItem"
+			parameterOrder="parameters tokenUsuario">
+			<input
+				wsam:Action="http://ws.estoque.soap.bruno.estudo.com/EstoqueWS/cadastrarItemRequest"
+				message="tns:cadastrarItem" />
+			<output
+				wsam:Action="http://ws.estoque.soap.bruno.estudo.com/EstoqueWS/cadastrarItemResponse"
+				message="tns:cadastrarItemResponse" />
+			<fault message="tns:AutorizacaoException"
+				name="AutorizacaoException"
+				wsam:Action="http://ws.estoque.soap.bruno.estudo.com/EstoqueWS/cadastrarItem/Fault/AutorizacaoException" />
+		</operation>
+	</portType>
+	<binding name="EstoqueWSPortBinding" type="tns:EstoqueWS">
+		<soap:binding
+			transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+		<operation name="todosOsItens">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+		<operation name="cadastrarItem">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" parts="parameters" />
+				<soap:header message="tns:cadastrarItem"
+					part="tokenUsuario" use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+			<fault name="AutorizacaoException">
+				<soap:fault name="AutorizacaoException" use="literal" />
+			</fault>
+		</operation>
+	</binding>
+	<service name="EstoqueWSService">
+		<port name="EstoqueWSPort" binding="tns:EstoqueWSPortBinding">
+			<soap:address location="http://localhost:8080/estoquews" />
+		</port>
+	</service>
+</definitions>

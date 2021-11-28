@@ -1,0 +1,13 @@
+/**
+ * EstoqueWS.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package br.com.caelum.estoque.ws;
+
+public interface EstoqueWS extends java.rmi.Remote {
+    public br.com.caelum.estoque.ws.Item[] todosOsItens(br.com.caelum.estoque.ws.Filtro[] filtros) throws java.rmi.RemoteException;
+    public void cadastrarItem(br.com.caelum.estoque.ws.holders.ItemHolder item, java.util.Calendar dataValidade, java.lang.String token) throws java.rmi.RemoteException, br.com.caelum.estoque.ws.AutorizacaoFault;
+}

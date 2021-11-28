@@ -1,0 +1,9 @@
+package com.estudo.bruno.soap.estoque.ws;
+
+public class PublicaEstoque {
+
+	public static void main(String[] args) {
+
+	}
+
+}
